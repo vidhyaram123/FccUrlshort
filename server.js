@@ -42,7 +42,7 @@ app.get('/',function(req,res){
 })
 
 app.post('/new',function(req,res){
-    console.log("url request"+ req.body);
+    //console.log("url request"+ req.body);
     var urll = String(req.body.longurl);
     checkAndInsert(urll,res);
 })
